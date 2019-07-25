@@ -1074,3 +1074,10 @@ h1, h2, h3, h4, h5,
     color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 
+label {
+   display: block;
+   font: 1rem 'Fira Sans', sans-serif;
+}input,
+label {
+   margin: .4rem 0;
+}

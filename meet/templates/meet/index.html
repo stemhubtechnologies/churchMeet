@@ -1,9 +1,8 @@
-<!--Django code-->
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>meetthirang</title>
+    <title>Church Meet</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -17,6 +16,8 @@
     <link rel="stylesheet" href="{% static 'meet/asset/fonts/flaticon/font/flaticon.css' %}">
     <link rel="stylesheet" href="{% static 'meet/asset/css/aos.css' %}">
     <link rel="stylesheet" href="{% static 'meet/asset/css/style.css' %}">
+    <script src="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <!-- for testimonial alignment-->
     <style type="text/css">
     .owl-nav{
@@ -50,19 +51,19 @@
           <div class="container">
             <div class="row align-items-center position-relative">
               <div class="site-logo">
-                <img src="{% static 'meet/asset/images/logo6.png' %}" width="350" height="100" class="d-inline-block align-left" alt="">
+                <!--<img src="{% static 'meet/asset/images/logo6.png' %}"  width="350" height="100" class="d-inline-block align-left" alt="">-->
                 
                 
                 
-                <a href="index.html" class="text-black"> <span class="text-primary"> </a>
+                <a href="index.html" class="text-black"> <span class="text-primary">ChurchMeet</a>
               </div>
               
               <nav class="site-navigation text-center ml-auto" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
                   <li><a href="#home-section" class="nav-link">Home</a></li>
                   <li><a href="#about-section" class="nav-link">About us</a></li>
-                  <li><a href="#discover-section" class="nav-link">Current Program</a></li>
-                  <li><a href="#donate-section" class="nav-link">Login</a></li>
+                  <li><a href="#discover-section" class="nav-link">Current Meetings</a></li>
+                  <li><a href="#donate-section" class="nav-link">Add New Meetings</a></li>
                   <li><a href="#Projects-section" class="nav-link">Projects</a></li>
                   <li><a href="#contact-section" class="nav-link">Contact</a></li>
                 </ul>
@@ -230,528 +231,134 @@
             </div>
           </div>
         </div>
-        <div class="site-section bg-image overlay" style="background-image: url('{% static 'meet/asset/images/hero_1_no-text.jpg' %}');" id="donate-section">
+        <!-- Add New message section starts-->
+        <div class="site-section bg-light" id="contact-section">
           <div class="container">
-            <div class="row align-items-center justify-content-center">
-              <div class="col-lg-5 text-center">
-                <h2 class="text-white mb-4">LOGIN FOR KALAM BHARAT PROGRAM</h2>
-                <p><a href="http://www.kigasummit.com/klcp/signup.php" class="btn btn-primary px-4 py-3 btn-block">Login</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="site-section" id="team-section">
-          <div class="container">
-            <div class="row mb-5 justify-content-center">
-              <div class="col-md-7 text-center">
-                <h2 class="text-black text-uppercase section-title">ADVISORY BOARD</h2>
-                
-              </div>
-            </div>
             <div class="row">
-              <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up">
-                <div class="block-team-member-1 text-center rounded">
-                  <figure>
-                    <img src="{% static 'meet/asset/images/person_1.jpg' %}" alt="Image" class="img-fluid square">
-                  </figure>
-                  <h3 class="font-size-20 text-black">SRIJAN PAL SINGH </h3>
-                  <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">CEO, KALAM CENTRE</span>
-                  <p class="px-3 mb-3"> </p>
-                  <div class="block-social-1">
-                    <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
-                    <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
-                    <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-                <div class="block-team-member-1 text-center rounded">
-                  <figure>
-                    <img src="{% static 'meet/asset/images/person_2.jpg' %}" alt="Image" class="img-fluid square">
-                  </figure>
-                  <h3 class="font-size-20 text-black">AKELLA RAGHAVENDRA</h3>
-                  <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">IAS TRAINER & MOTIVATIONAL SPEAKER</span>
-                  <p class="px-3 mb-3"> </p>
-                  <div class="block-social-1">
-                    <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
-                    <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
-                    <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                <div class="block-team-member-1 text-center rounded">
-                  <figure>
-                    <img src="{% static 'meet/asset/images/person_3.jpg' %}" alt="Image" class="img-fluid square">
-                  </figure>
-                  <h3 class="font-size-20 text-black">Dr.SUDHA CHALLA</h3>
-                  <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">SOCIAL ACTIVIST</span>
-                  <p class="px-3 mb-3"> </p>
-                  <div class="block-social-1">
-                    <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
-                    <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
-                    <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                <div class="block-team-member-1 text-center rounded">
-                  <figure>
-                    <img src="{% static 'meet/asset/images/person_4.jpg' %}" alt="Image" class="img-fluid square">
-                  </figure>
-                  <h3 class="font-size-20 text-black">SATISH KUMAR PENDYALA</h3>
-                  <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">SOCIAL ACTIVIST</span>
-                  <p class="px-3 mb-3"> </p>
-                  <div class="block-social-1">
-                    <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
-                    <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
-                    <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                <div class="block-team-member-1 text-center rounded">
-                  <figure>
-                    <img src="{% static 'meet/asset/images/person_5.jpg' %}" alt="Image" class="img-fluid square">
-                  </figure>
-                  <h3 class="font-size-20 text-black">TEEGALA VIKRAM REDDY</h3>
-                  <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">MPP SAROORNAGAR</span>
-                  <p class="px-3 mb-3"> </p>
-                  <div class="block-social-1">
-                    <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
-                    <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
-                    <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
-                  </div>
-                </div>
+              <div class="col-12 text-center mb-5">
+                <h2 class="text-black section-title text-uppercase"></h2>
               </div>
             </div>
-          </div>
-        </div>
-        
-        
-        <div class="site-section block-13 overlay bg-image" id="testimonials-section" data-aos="fade" style="background-image: url('{% static 'meet/asset/images/hero_1_no-text.jpg' %}');">
-          <div class="container">
-            
-            <div class="text-center mb-5">
-              <h2 class="text-white text-uppercase section-title">Testimonial</h2>
-            </div>
-            <div class="owl-carousel nonloop-block-13">
-              <div>
-                <div class="block-testimony-1 text-center">
-                  
-                  <blockquote class="mb-4 box">
-                    <p>&ldquo;It was an immense pleasure for me to work with meet thirang so far.I improvised my managerial skills and a lot in how to be a responsible citizen. I observed the change in me before and after joining the organisation. I learnt a lot from worth-full words given by the preacher akela raghavendra sir.</p>
-                  </blockquote>
-                  <figure>
-                    <img src="{% static 'meet/asset/images/lakshmikanth.jpg' %}" alt="Image" class="img-fluid rounded-circle mx-auto ">
-                    <style>
-                    {
-                    width: 350px;
-                    height: 320px;
-                    background-color: yellow;
-                    }
-                    </style>
-                  </figure>
-                  <h3 class="font-size-20 text-white">Lakshmikanth</h3>
-                </div>
-              </div>
-              <div>
-                <div class="block-testimony-1 text-center">
-                  <blockquote class="mb-4 box">
-                    <p>&ldquo;During my under graduation , I was part of meet thirang! And am very happy for being one. It is one of an experience everybody must have. Lots of exposure and you get to meet various people in your life. The kind of Social responsibilities the team took up was extraordinary. Hats off to the team, their idea of collaborating with the youngsters and making every event was a big hit. Organisation Team President -Phani Kumar and other Chief members -Avinash,Harish,Hemanth, Rajesh has done some amazing work and its worth being a part of it. </p>
-                  </blockquote>
-                  <figure>
-                    <img src="{% static 'meet/asset/images/kashyap.jpg' %}" alt="Image" class="img-fluid rounded-circle mx-auto">
-                  </figure>
-                  <h3 class="font-size-20 text-white"> Pooja Kashyap</h3>
-                </div>
-              </div>
-              <div>
-                <div class="block-testimony-1 text-center">
-                  <blockquote class="mb-4 box">
-                    <p>&ldquo;Its a great pleasure to work with meet thirang organization. I've been working in the base since 2014, many good things and experiences are there to share. Apart from these few personal abilities had improved like time management, communication skills and leadership qualities. Thank you for accepting me as one of your family members and I continue my role till the very last breath in the organization. "Serving for the country is an ultimate living."</p>
-                  </blockquote>
-                  <figure>
-                    <img src="{% static 'meet/asset/images/yeshwant.jpg' %}" alt="Image" class="img-fluid rounded-circle mx-auto">
-                  </figure>
-                  <h3 class="font-size-20 text-white">Yeshwanth Reddy Kalle</h3>
-                </div>
-              </div>
-              <div>
-                <div class="block-testimony-1 text-center">
-                  <blockquote class="mb-4 box">
-                    <p>&ldquo;To be the better version of yourself, always be in a constant mode of learning. Siphon information, not data. Teach to people to learn more than what you can by reading"
-                    meetthirang has been a life changing experience to me. The journey was an epiphany inducing where I got to meet a like minded network of impact worthy youth of this generation. Together we have given our best to create awareness on Various issues that plague our society today. Having been a part of the organization for over 4 years now, I could say that the knowledge and skills that I have developed over the years have made me the best version of myself. I have managed Various roles and took up Various responsibilities along the way( which include me leading the college committee and being a part of youth conventions ). I could say that meetthirang helped me contribute my share to the society and taught me to give back at least something to the society</p>
-                  </blockquote>
-                  <figure>
-                    <img src="{% static 'meet/asset/images/gunda.jpg' %}" alt="Image" class="img-fluid rounded-circle mx-auto">
-                  </figure>
-                  <h3 class="font-size-20 text-white">Nikeelu Gunda</h3>
-                </div>
-              </div>
-              <div>
-                <div class="block-testimony-1 text-center">
-                  <blockquote class="mb-4 box">
-                    <p>&ldquo;I have been part of meetthirang from last 18 months and worked for few events.For me,meetthirang is not just an organization but it helped me to mould myself into an efficient person.I have learnt how to manage people & crowd.The most cherishing moment i have experienced is that  i was awarded with best leadership award-2016.Of all the experiences the most  effective things i have learnt are like MANAGEMENT, PATIENCE, CONVINCING and other things too.But what comes the first is PHANI,he has been always supporting,encouraging and i have learnt a lot from him.He tells me the most happening,logical and facts about an organisation.The team,the administration team too, i did learn hard work and dedication from those guys.But if i come to other side yes, it is the place you get improve your communication skills,personality,leadership quality,time management,to deal with different mind sets of people etc.And Some Experience can't be just shared you gotta experience them( like after lots of hardwork,stress,tension the happiness you get after the successful outcome of your work).Finally meetTHIRANG is not just an organisation helps society but it makes most of the youth today more strong,sensible and aspiring and we volunteers of meetthirang are people with strong minds you can find in serving people and serving nation</p><br>
-                  </blockquote>
-                  <figure>
-                    <img src="{% static 'meet/asset/images/sathvika.jpg' %}" alt="Image" class="img-fluid rounded-circle mx-auto">
-                  </figure>
-                  <h3 class="font-size-20 text-white">Sathvika</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="site-section" id="Projects-section">
-          <div class="container">
             <div class="row justify-content-center">
-              <div class="col-7 text-center mb-5 text-center">
-                <h2 class="text-black text-uppercase section-title">Projects</h2>
-                <p> </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <div>
-                  <a href="single.html" class="mb-4 d-block"><img src="{% static 'meet/asset/images/kalala_bharatam.jpg' %}" alt="Image" class="img-fluid rounded"></a>
-                  <h2><a href="single.html">KALALA BHARATHAM</a></h2>
-                  <p class="text-muted mb-3 text-uppercase small"><span class="mr-2">January 26</span>  <a href="single.html" class="by"> </a></p>
-                  <p>26 January a day of enlightenment.a day of hope & a synergy of togetherness of orphan kids on a single platform to generate the strength and build a hope of life in them. This program will be organised every year on 26 January and will reach out to 2000+ orphan kids every year.</p>
-                  <p><a href="single.html">Get Ready for 2020</a></p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div>
-                  <a href="single.html" class="mb-4 d-block"><img src="{% static 'meet/asset/images/hero_3.jpg' %}" alt="Image" class="img-fluid rounded"></a>
-                  <h2><a href="single.html">VISION 360</a></h2>
-                  <p class="text-muted mb-3 text-uppercase small"><span class="mr-2"> </span>  <a href="single.html" class="by"> </a></p> We the team of meetTHIRANG in Collaboration with KALAM CENTRE has come up with an initiation to organize “VISION-360*”, To inculcate the ideology of single vision in the minds of our youth to succeed in their career. We are inviting six eminent personalities from six different backgrounds who has worked on single vision and has succeeded in their career.</p>
-                  <p>Gracing the occasion are our following categories :</p>
-                  <p>1  Education & mentoring</p>
-                  <p>2  Agriculture & allied activities</p>
-                  <p>3  Start-up Innovations</p>
-                  <p>4  Research & Analysis</p>
-                  <p>5  NGO/Social Service & Social Entrepreneurship</p> <p>
+              <div class="col-lg-6 mb-5">
+                <form name = "myform1" action="/upload/" method="post" id ="upload">
+                  {% csrf_token %}
+                  
+                  <div class="form-group row">
+                    <div class="col-md-6 mb-4 mb-lg-0">
+                      <input type="text" class="form-control" placeholder="Name" id = "name" name="name">
+                      
+                    </div>
+                    <div class="col-md-6">
+                      <input type="number" class="form-control" placeholder="Mobile" id ="mobile" name ="mobile">
+                    </div>
+                    
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-12">
+                      <input type="email" class="form-control" placeholder="Email" id ="email" name = "email">
+                    </div>
+                    
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-12">
+                      <input type="text" class="form-control" placeholder="Title" id ="title" name = "title">
+                    </div>
+                  </div>
+                  
+                  <div class="form-group row">
+                    <div class="col-md-12">
+                      <textarea class="form-control" placeholder="Write your message." id= "message" name="message" cols="30" rows="10"></textarea>
+                    </div>
+                    
+                  </div>
+                  <!--Image upload start-->
+                  <div class="container">
+                    <id= "image" name="image" >
+                    <p></p>
+                    
+                    <!-- bootstrap-imageupload. -->
+                    
+                    <div class="imageupload panel panel-default">
+                      
+                      <div class="panel-heading clearfix">
+                        
+                        <h3 class="panel-title pull-left">Select Image file</h3>
+                        
+                        <div class="btn-group pull-right">
+                          
+                          <button type="button" class="btn btn-default active">File</button>
+                          
+                          <button type="button" class="btn btn-default">URL</button>
+                          
+                        </div>
+                        
+                      </div>
+                      
+                      <div class="file-tab panel-body">
+                        
+                        <label class="btn btn-primary btn-file">
+                          
+                          <span>Browse</span>
+                          
+                          <!-- The file is stored here. -->
+                          
+                          <input type="file" name="image-file">
+                          
+                        </label>
+                        
+                        <button type="button" class="btn btn-danger">Delete image</button>
+                        
+                      </div>
+                      
+                      <div class="url-tab panel-body">
+                        
+                        <div class="input-group">
+                          
+                          <input type="text" class="form-control hasclear" placeholder="Image URL">
+                          
+                          <div class="input-group-btn">
+                            
+                            <button type="button" class="btn btn-default">Submit</button>
+                            
+                          </div>
+                          
+                        </div>
+                        
+                        <button type="button" class="btn btn-default">Remove</button>
+                        
+                        <!-- The URL is stored here. -->
+                        
+                        <input type="hidden" name="image-url">
+                        
+                      </div>
+                      
+                    </div>
+                    
+                    
+                 <!-- Another way to upload image-->   
+                  <!--
+                  </div>
+                  <h1>Image Uploader</h1>
+                  <form enctype="multipart/form-data" method="POST" action="">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="submit" value="Upload"/>
+                  </form>
+                  <br><br>
+                  <img src='{{ MEDIA_URL }}{{ imagefile }}'>
+                  <br><br>
                 </p>
-                <p><a href="">Read More</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Start Client Section -->
-      <!--<div id="client-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="text-black text-uppercase section-title">Our Collaborators</h2>
-              <div class="client-box">
-                <ul class="client-list">
-                  <li><a href="#"><img src="{% static 'meet/asset/images/unesco.png' %}" class="img-responsive' %}" alt="Clients Logo"></a></li>
-                  <li><a href="#"><img src="{% static 'meet/asset/images/92-7fm.png' %}" class="img-responsive' %}" alt="Clients Logo"></a></li>
-                  <li><a href="#"><img src="{% static 'meet/asset/images/kalamcentre.png' %}" class="img-responsive' %}" alt="Clients Logo"></a></li>
-                  <li><a href="#"><img src="{% static 'meet/asset/images/kcp_foundation.png' %}" class="img-responsive' %}" alt="Clients Logo"></a></li>
-                  <li><a href="#"><img src="{% static 'meet/asset/images/vif.png' %}" class="img-responsive' %}" alt="Clients Logo"></a></li>
-                  <li><a href="#"><img src="{% static 'meet/asset/images/meet.png' %}" class="img-responsive' %}" alt="Clients Logo"></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>-->
-      <!-- End Client Section -->
-      <div class="site-section" id="team-section">
-        <div class="container">
-          <div class="row mb-5 justify-content-center">
-            <div class="col-md-10 text-center">
-              
-              <div id="demo" class="carousel slide" data-ride="carousel">
-                <h2 class="text-black text-uppercase section-title text-center">Our Collaborators</h2>
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                  <li data-target="#demo" data-slide-to="0" class="active"></li>
-                  <li data-target="#demo" data-slide-to="1"></li>
-                  <li data-target="#demo" data-slide-to="2"></li>
-                </ul>
+              -->
+
+                <!-- Another way to upload image--> 
+                <!--Image upload end-->
                 
-                <!-- The slideshow -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up">
-                        <div class="block-team-member-1 text-center rounded">
-                          <figure>
-                            <img src="{% static 'meet/asset/images/92-7fm.jpg' %}" alt="Image" class="img-fluid square">
-                          </figure>
-                          <h3 class="font-size-20 text-black"></h3>
-                          <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
-                          <p class="px-3 mb-3"> </p>
-                          <div class="block-social-1">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-                        <div class="block-team-member-1 text-center rounded">
-                          <figure>
-                            <img src="{% static 'meet/asset/images/af.jpg' %}" alt="Image" class="img-fluid square">
-                          </figure>
-                          <h3 class="font-size-20 text-black"></h3>
-                          <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
-                          <p class="px-3 mb-3"> </p>
-                          <div class="block-social-1">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-                        <div class="block-team-member-1 text-center rounded">
-                          <figure>
-                            <img src="{% static 'meet/asset/images/unesco.jpg' %}" alt="Image" class="img-fluid square">
-                          </figure>
-                          <h3 class="font-size-20 text-black"></h3>
-                          <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
-                          <p class="px-3 mb-3"> </p>
-                          <div class="block-social-1">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="block-team-member-1 text-center rounded">
-                          <figure>
-                            <img src="{% static 'meet/asset/images/kcp_foundation.png' %}" alt="Image" class="img-fluid square">
-                          </figure>
-                          <h3 class="font-size-20 text-black"></h3>
-                          <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
-                          <p class="px-3 mb-3"> </p>
-                          <div class="block-social-1">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="block-team-member-1 text-center rounded">
-                          <figure>
-                            <img src="{% static 'meet/asset/images/vif.jpg' %}" alt="Image" class="img-fluid square">
-                          </figure>
-                          <h3 class="font-size-20 text-black"></h3>
-                          <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
-                          <p class="px-3 mb-3"> </p>
-                          <div class="block-social-1">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="block-team-member-1 text-center rounded">
-                          <figure>
-                            <img src="{% static 'meet/asset/images/meet.jpg' %}" alt="Image" class="img-fluid square">
-                          </figure>
-                          <h3 class="font-size-20 text-black"></h3>
-                          <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
-                          <p class="px-3 mb-3"> </p>
-                          <div class="block-social-1">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <!--<input id="datepicker" width="270" />-->
                 
-                <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-      
-      <div class="site-section" id="team-section">
-        <div class="container">
-          <div class="row mb-5 justify-content-center">
-            <div class="col-md-12 text-center">
-              
-              <div id="demo" class="carousel slide" data-ride="carousel">
-                <h2 class="text-black text-uppercase section-title">Our Sponsors</h2>
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                  <li data-target="#demo" data-slide-to="0" class="active"></li>
-                  <li data-target="#demo" data-slide-to="1"></li>
-                  <li data-target="#demo" data-slide-to="2"></li>
-                </ul>
-                
-                <!-- The slideshow -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up">
-                        <div class="block-team-member-1 text-center rounded">
-                          <figure>
-                            <img src="{% static 'meet/asset/images/collegeday.jpg' %}" alt="Image" class="img-fluid square">
-                          </figure>
-                          <h3 class="font-size-20 text-black"></h3>
-                          <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
-                          <p class="px-3 mb-3"> </p>
-                          <div class="block-social-1">
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-                        <div class="block-team-member-1 text-center rounded">
-                          <figure>
-                            <img src="{% static 'meet/asset/images/innu.jpg' %}" alt="Image" class="img-fluid square">
-                          </figure>
-                          <h3 class="font-size-20 text-black"></h3>
-                          <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
-                          <p class="px-3 mb-3"> </p>
-                          <div class="block-social-1">
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="block-team-member-1 text-center rounded">
-                          <figure>
-                            <img src="{% static 'meet/asset/images/kpc-projects-ltd.jpg' %}" alt="Image" class="img-fluid square">
-                          </figure>
-                          <h3 class="font-size-20 text-black"></h3>
-                          <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
-                          <p class="px-3 mb-3"> </p>
-                          <div class="block-social-1">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="block-team-member-1 text-center rounded">
-                          <figure>
-                            <img src="{% static 'meet/asset/images/lotuslappublicschool.png' %}" alt="Image" class="img-fluid square">
-                          </figure>
-                          <h3 class="font-size-20 text-black"></h3>
-                          <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
-                          <p class="px-3 mb-3"> </p>
-                          <div class="block-social-1">
-                            
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="block-team-member-1 text-center rounded">
-                          <figure>
-                            <img src="{% static 'meet/asset/images/mom.png' %}" alt="Image" class="img-fluid square">
-                          </figure>
-                          <h3 class="font-size-20 text-black"></h3>
-                          <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
-                          <p class="px-3 mb-3"> </p>
-                          <div class="block-social-1">
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="block-team-member-1 text-center rounded">
-                          <figure>
-                            <img src="{% static 'meet/asset/images/siridental.jpg' %}" alt="Image" class="img-fluid square">
-                          </figure>
-                          <h3 class="font-size-20 text-black"></h3>
-                          <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
-                          <p class="px-3 mb-3"> </p>
-                          <div class="block-social-1">
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="block-team-member-1 text-center rounded">
-                          <figure>
-                            <img src="{% static 'meet/asset/images/takshasilaiasacademy.jpg' %}" alt="Image" class="img-fluid square">
-                          </figure>
-                          <h3 class="font-size-20 text-black"></h3>
-                          <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
-                          <p class="px-3 mb-3"> </p>
-                          <div class="block-social-1">
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="block-team-member-1 text-center rounded">
-                          <figure>
-                            <img src="{% static 'meet/asset/images/vaasya.png' %}" alt="Image" class="img-fluid square">
-                          </figure>
-                          <h3 class="font-size-20 text-black"></h3>
-                          <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
-                          <p class="px-3 mb-3"> </p>
-                          <div class="block-social-1">
-                            
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-      
-      
-      <!-- Sponsors section ends-->
-      <div class="site-section bg-light" id="contact-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-center mb-5">
-              <h2 class="text-black section-title text-uppercase">Contact Us</h2>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-lg-6 mb-5">
-              <form name = "myform" action="/contactform/" method="post" id ="contact">
-                {% csrf_token %}
-                <div class="form-group row">
-                  <div class="col-md-6 mb-4 mb-lg-0">
-                    <input type="text" class="form-control" placeholder="First name" id = "fname" name="yourname">
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Last name" id ="lname" name ="lname">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-md-12">
-                    <input type="text" class="form-control" placeholder="Email address" id ="email" name = myemail>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-md-12">
-                    <textarea class="form-control" placeholder="Write your message." id= "message" name="mymessage" cols="30" rows="10"></textarea>
-                  </div>
-                </div>
                 <div class="form-group row">
                   <div class="col-md-6 ml-auto">
-                    <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message">
+                    <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Upload">
                   </div>
                 </div>
               </form>
@@ -760,98 +367,636 @@
           </div>
         </div>
       </div>
-      <footer class="site-footer">
+      <!--
+      <div class="site-section bg-image overlay" style="background-image: url('{% static 'meet/asset/images/hero_1_no-text.jpg' %}');" id="donate-section">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-md-8">
-                  <h2 class="footer-heading mb-4">Office Address: </h2>
-                  <p>H.No: 6-3-348/6, Dwarakapuri Colony,Panjagutta,Hyderabad,Telangana-500087 </p>
-                  <h2 class="footer-heading mb-4">Reg Address: </h2>
-                  <p>Plot No 152, H.No:12/100,Tirumalanagar Colony,Jillelaguda,RR Dist,Telangana-500097 </p>
-                </div>
-                <div class="col-md-4 ml-auto">
-                  <h2 class="footer-heading mb-4">Features</h2>
-                  <ul class="list-unstyled">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul>
-                </div>
-                
-              </div>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-5 text-center">
+              <h2 class="text-white mb-4">LOGIN FOR KALAM BHARAT PROGRAM</h2>
+              <p><a href="http://www.kigasummit.com/klcp/signup.php" class="btn btn-primary px-4 py-3 btn-block">Login</a></p>
             </div>
-            <div class="col-md-4 ml-auto">
-              
-              <div class="mb-5">
-                <div class="mb-5">
-                  <h2 class="footer-heading mb-4"></h2>
-                  <p></p>
-                </div>
-                <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
-                <form action="/emailSubscribe/" method="post" name="myform1" novalidate>
-                  {% csrf_token %}
-                  <div class="input-group mb-3">
-                    
-                    <input type="text" class="form-control" id ="email" name ="email"placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                    <div class="input-group-append">
-                      <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Subscribe">
-                    </div>
-                  </div>
-                </form>
-              </div>
-              
-              
-              <h2 class="footer-heading mb-4">Follow Us</h2>
-              <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-            </form>
           </div>
         </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-              <p>
-                Developed by StemHub Technologies Pvt.Ltd<br>
-                
-                
-                  <h7>Contact Us: </h7>                          
-                  <a href="#">info@stemhub.tech</a><br>
-                  <h7>  Visit Us: </h7>                          
-                  <a href="#">  www.stemhub.tech</a>
-             
-
-                <!--
-                <~~! Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. ~~>
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-                <~~! Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. ~~>
-                -->
-              </p>
+      </div>
+      
+      <div class="site-section" id="team-section">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-7 text-center">
+              <h2 class="text-black text-uppercase section-title">ADVISORY BOARD</h2>
+              
             </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up">
+              <div class="block-team-member-1 text-center rounded">
+                <figure>
+                  <img src="{% static 'meet/asset/images/person_1.jpg' %}" alt="Image" class="img-fluid square">
+                </figure>
+                <h3 class="font-size-20 text-black">SRIJAN PAL SINGH </h3>
+                <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">CEO, KALAM CENTRE</span>
+                <p class="px-3 mb-3"> </p>
+                <div class="block-social-1">
+                  <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
+                  <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
+                  <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+              <div class="block-team-member-1 text-center rounded">
+                <figure>
+                  <img src="{% static 'meet/asset/images/person_2.jpg' %}" alt="Image" class="img-fluid square">
+                </figure>
+                <h3 class="font-size-20 text-black">AKELLA RAGHAVENDRA</h3>
+                <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">IAS TRAINER & MOTIVATIONAL SPEAKER</span>
+                <p class="px-3 mb-3"> </p>
+                <div class="block-social-1">
+                  <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
+                  <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
+                  <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="block-team-member-1 text-center rounded">
+                <figure>
+                  <img src="{% static 'meet/asset/images/person_3.jpg' %}" alt="Image" class="img-fluid square">
+                </figure>
+                <h3 class="font-size-20 text-black">Dr.SUDHA CHALLA</h3>
+                <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">SOCIAL ACTIVIST</span>
+                <p class="px-3 mb-3"> </p>
+                <div class="block-social-1">
+                  <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
+                  <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
+                  <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="block-team-member-1 text-center rounded">
+                <figure>
+                  <img src="{% static 'meet/asset/images/person_4.jpg' %}" alt="Image" class="img-fluid square">
+                </figure>
+                <h3 class="font-size-20 text-black">SATISH KUMAR PENDYALA</h3>
+                <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">SOCIAL ACTIVIST</span>
+                <p class="px-3 mb-3"> </p>
+                <div class="block-social-1">
+                  <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
+                  <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
+                  <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="block-team-member-1 text-center rounded">
+                <figure>
+                  <img src="{% static 'meet/asset/images/person_5.jpg' %}" alt="Image" class="img-fluid square">
+                </figure>
+                <h3 class="font-size-20 text-black">TEEGALA VIKRAM REDDY</h3>
+                <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">MPP SAROORNAGAR</span>
+                <p class="px-3 mb-3"> </p>
+                <div class="block-social-1">
+                  <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
+                  <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
+                  <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="site-section block-13 overlay bg-image" id="testimonials-section" data-aos="fade" style="background-image: url('{% static 'meet/asset/images/hero_1_no-text.jpg' %}');">
+        <div class="container">
+          
+          <div class="text-center mb-5">
+            <h2 class="text-white text-uppercase section-title">Testimonial</h2>
+          </div>
+          <div class="owl-carousel nonloop-block-13">
+            <div>
+              <div class="block-testimony-1 text-center">
+                
+                <blockquote class="mb-4 box">
+                  <p>&ldquo;It was an immense pleasure for me to work with meet thirang so far.I improvised my managerial skills and a lot in how to be a responsible citizen. I observed the change in me before and after joining the organisation. I learnt a lot from worth-full words given by the preacher akela raghavendra sir.</p>
+                </blockquote>
+                <figure>
+                  <img src="{% static 'meet/asset/images/lakshmikanth.jpg' %}" alt="Image" class="img-fluid rounded-circle mx-auto ">
+                  <style>
+                  {
+                  width: 350px;
+                  height: 320px;
+                  background-color: yellow;
+                  }
+                  </style>
+                </figure>
+                <h3 class="font-size-20 text-white">Lakshmikanth</h3>
+              </div>
+            </div>
+            <div>
+              <div class="block-testimony-1 text-center">
+                <blockquote class="mb-4 box">
+                  <p>&ldquo;During my under graduation , I was part of meet thirang! And am very happy for being one. It is one of an experience everybody must have. Lots of exposure and you get to meet various people in your life. The kind of Social responsibilities the team took up was extraordinary. Hats off to the team, their idea of collaborating with the youngsters and making every event was a big hit. Organisation Team President -Phani Kumar and other Chief members -Avinash,Harish,Hemanth, Rajesh has done some amazing work and its worth being a part of it. </p>
+                </blockquote>
+                <figure>
+                  <img src="{% static 'meet/asset/images/kashyap.jpg' %}" alt="Image" class="img-fluid rounded-circle mx-auto">
+                </figure>
+                <h3 class="font-size-20 text-white"> Pooja Kashyap</h3>
+              </div>
+            </div>
+            <div>
+              <div class="block-testimony-1 text-center">
+                <blockquote class="mb-4 box">
+                  <p>&ldquo;Its a great pleasure to work with meet thirang organization. I've been working in the base since 2014, many good things and experiences are there to share. Apart from these few personal abilities had improved like time management, communication skills and leadership qualities. Thank you for accepting me as one of your family members and I continue my role till the very last breath in the organization. "Serving for the country is an ultimate living."</p>
+                </blockquote>
+                <figure>
+                  <img src="{% static 'meet/asset/images/yeshwant.jpg' %}" alt="Image" class="img-fluid rounded-circle mx-auto">
+                </figure>
+                <h3 class="font-size-20 text-white">Yeshwanth Reddy Kalle</h3>
+              </div>
+            </div>
+            <div>
+              <div class="block-testimony-1 text-center">
+                <blockquote class="mb-4 box">
+                  <p>&ldquo;To be the better version of yourself, always be in a constant mode of learning. Siphon information, not data. Teach to people to learn more than what you can by reading"
+                  meetthirang has been a life changing experience to me. The journey was an epiphany inducing where I got to meet a like minded network of impact worthy youth of this generation. Together we have given our best to create awareness on Various issues that plague our society today. Having been a part of the organization for over 4 years now, I could say that the knowledge and skills that I have developed over the years have made me the best version of myself. I have managed Various roles and took up Various responsibilities along the way( which include me leading the college committee and being a part of youth conventions ). I could say that meetthirang helped me contribute my share to the society and taught me to give back at least something to the society</p>
+                </blockquote>
+                <figure>
+                  <img src="{% static 'meet/asset/images/gunda.jpg' %}" alt="Image" class="img-fluid rounded-circle mx-auto">
+                </figure>
+                <h3 class="font-size-20 text-white">Nikeelu Gunda</h3>
+              </div>
+            </div>
+            <div>
+              <div class="block-testimony-1 text-center">
+                <blockquote class="mb-4 box">
+                  <p>&ldquo;I have been part of meetthirang from last 18 months and worked for few events.For me,meetthirang is not just an organization but it helped me to mould myself into an efficient person.I have learnt how to manage people & crowd.The most cherishing moment i have experienced is that  i was awarded with best leadership award-2016.Of all the experiences the most  effective things i have learnt are like MANAGEMENT, PATIENCE, CONVINCING and other things too.But what comes the first is PHANI,he has been always supporting,encouraging and i have learnt a lot from him.He tells me the most happening,logical and facts about an organisation.The team,the administration team too, i did learn hard work and dedication from those guys.But if i come to other side yes, it is the place you get improve your communication skills,personality,leadership quality,time management,to deal with different mind sets of people etc.And Some Experience can't be just shared you gotta experience them( like after lots of hardwork,stress,tension the happiness you get after the successful outcome of your work).Finally meetTHIRANG is not just an organisation helps society but it makes most of the youth today more strong,sensible and aspiring and we volunteers of meetthirang are people with strong minds you can find in serving people and serving nation</p><br>
+                </blockquote>
+                <figure>
+                  <img src="{% static 'meet/asset/images/sathvika.jpg' %}" alt="Image" class="img-fluid rounded-circle mx-auto">
+                </figure>
+                <h3 class="font-size-20 text-white">Sathvika</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="site-section" id="Projects-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-7 text-center mb-5 text-center">
+              <h2 class="text-black text-uppercase section-title">Projects</h2>
+              <p> </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div>
+                <a href="single.html" class="mb-4 d-block"><img src="{% static 'meet/asset/images/kalala_bharatam.jpg' %}" alt="Image" class="img-fluid rounded"></a>
+                <h2><a href="single.html">KALALA BHARATHAM</a></h2>
+                <p class="text-muted mb-3 text-uppercase small"><span class="mr-2">January 26</span>  <a href="single.html" class="by"> </a></p>
+                <p>26 January a day of enlightenment.a day of hope & a synergy of togetherness of orphan kids on a single platform to generate the strength and build a hope of life in them. This program will be organised every year on 26 January and will reach out to 2000+ orphan kids every year.</p>
+                <p><a href="single.html">Get Ready for 2020</a></p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div>
+                <a href="single.html" class="mb-4 d-block"><img src="{% static 'meet/asset/images/hero_3.jpg' %}" alt="Image" class="img-fluid rounded"></a>
+                <h2><a href="single.html">VISION 360</a></h2>
+                <p class="text-muted mb-3 text-uppercase small"><span class="mr-2"> </span>  <a href="single.html" class="by"> </a></p> We the team of meetTHIRANG in Collaboration with KALAM CENTRE has come up with an initiation to organize “VISION-360*”, To inculcate the ideology of single vision in the minds of our youth to succeed in their career. We are inviting six eminent personalities from six different backgrounds who has worked on single vision and has succeeded in their career.</p>
+                <p>Gracing the occasion are our following categories :</p>
+                <p>1  Education & mentoring</p>
+                <p>2  Agriculture & allied activities</p>
+                <p>3  Start-up Innovations</p>
+                <p>4  Research & Analysis</p>
+                <p>5  NGO/Social Service & Social Entrepreneurship</p> <p>
+              </p>
+              <p><a href="">Read More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+    <!--Start Client Section -->
+    <!--<div id="client-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-black text-uppercase section-title">Our Collaborators</h2>
+            <div class="client-box">
+              <ul class="client-list">
+                <li><a href="#"><img src="{% static 'meet/asset/images/unesco.png' %}" class="img-responsive' %}" alt="Clients Logo"></a></li>
+                <li><a href="#"><img src="{% static 'meet/asset/images/92-7fm.png' %}" class="img-responsive' %}" alt="Clients Logo"></a></li>
+                <li><a href="#"><img src="{% static 'meet/asset/images/kalamcentre.png' %}" class="img-responsive' %}" alt="Clients Logo"></a></li>
+                <li><a href="#"><img src="{% static 'meet/asset/images/kcp_foundation.png' %}" class="img-responsive' %}" alt="Clients Logo"></a></li>
+                <li><a href="#"><img src="{% static 'meet/asset/images/vif.png' %}" class="img-responsive' %}" alt="Clients Logo"></a></li>
+                <li><a href="#"><img src="{% static 'meet/asset/images/meet.png' %}" class="img-responsive' %}" alt="Clients Logo"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+    <!-- End Client Section -->
+    <div class="site-section" id="team-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-10 text-center">
+            
+            <div id="demo" class="carousel slide" data-ride="carousel">
+              <h2 class="text-black text-uppercase section-title text-center">Our Collaborators</h2>
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+              
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up">
+                      <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                          <img src="{% static 'meet/asset/images/92-7fm.jpg' %}" alt="Image" class="img-fluid square">
+                        </figure>
+                        <h3 class="font-size-20 text-black"></h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
+                        <p class="px-3 mb-3"> </p>
+                        <div class="block-social-1">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                      <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                          <img src="{% static 'meet/asset/images/af.jpg' %}" alt="Image" class="img-fluid square">
+                        </figure>
+                        <h3 class="font-size-20 text-black"></h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
+                        <p class="px-3 mb-3"> </p>
+                        <div class="block-social-1">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                      <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                          <img src="{% static 'meet/asset/images/unesco.jpg' %}" alt="Image" class="img-fluid square">
+                        </figure>
+                        <h3 class="font-size-20 text-black"></h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
+                        <p class="px-3 mb-3"> </p>
+                        <div class="block-social-1">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                      <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                          <img src="{% static 'meet/asset/images/kcp_foundation.png' %}" alt="Image" class="img-fluid square">
+                        </figure>
+                        <h3 class="font-size-20 text-black"></h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
+                        <p class="px-3 mb-3"> </p>
+                        <div class="block-social-1">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                      <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                          <img src="{% static 'meet/asset/images/vif.jpg' %}" alt="Image" class="img-fluid square">
+                        </figure>
+                        <h3 class="font-size-20 text-black"></h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
+                        <p class="px-3 mb-3"> </p>
+                        <div class="block-social-1">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                      <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                          <img src="{% static 'meet/asset/images/meet.jpg' %}" alt="Image" class="img-fluid square">
+                        </figure>
+                        <h3 class="font-size-20 text-black"></h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
+                        <p class="px-3 mb-3"> </p>
+                        <div class="block-social-1">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="site-section" id="team-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-12 text-center">
+            
+            <div id="demo" class="carousel slide" data-ride="carousel">
+              <h2 class="text-black text-uppercase section-title">Our Sponsors</h2>
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+              
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up">
+                      <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                          <img src="{% static 'meet/asset/images/collegeday.jpg' %}" alt="Image" class="img-fluid square">
+                        </figure>
+                        <h3 class="font-size-20 text-black"></h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
+                        <p class="px-3 mb-3"> </p>
+                        <div class="block-social-1">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                      <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                          <img src="{% static 'meet/asset/images/innu.jpg' %}" alt="Image" class="img-fluid square">
+                        </figure>
+                        <h3 class="font-size-20 text-black"></h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
+                        <p class="px-3 mb-3"> </p>
+                        <div class="block-social-1">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                      <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                          <img src="{% static 'meet/asset/images/kpc-projects-ltd.jpg' %}" alt="Image" class="img-fluid square">
+                        </figure>
+                        <h3 class="font-size-20 text-black"></h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
+                        <p class="px-3 mb-3"> </p>
+                        <div class="block-social-1">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                      <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                          <img src="{% static 'meet/asset/images/lotuslappublicschool.png' %}" alt="Image" class="img-fluid square">
+                        </figure>
+                        <h3 class="font-size-20 text-black"></h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
+                        <p class="px-3 mb-3"> </p>
+                        <div class="block-social-1">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                      <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                          <img src="{% static 'meet/asset/images/mom.png' %}" alt="Image" class="img-fluid square">
+                        </figure>
+                        <h3 class="font-size-20 text-black"></h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
+                        <p class="px-3 mb-3"> </p>
+                        <div class="block-social-1">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                      <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                          <img src="{% static 'meet/asset/images/siridental.jpg' %}" alt="Image" class="img-fluid square">
+                        </figure>
+                        <h3 class="font-size-20 text-black"></h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
+                        <p class="px-3 mb-3"> </p>
+                        <div class="block-social-1">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                      <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                          <img src="{% static 'meet/asset/images/takshasilaiasacademy.jpg' %}" alt="Image" class="img-fluid square">
+                        </figure>
+                        <h3 class="font-size-20 text-black"></h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
+                        <p class="px-3 mb-3"> </p>
+                        <div class="block-social-1">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                      <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                          <img src="{% static 'meet/asset/images/vaasya.png' %}" alt="Image" class="img-fluid square">
+                        </figure>
+                        <h3 class="font-size-20 text-black"></h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3"></span>
+                        <p class="px-3 mb-3"> </p>
+                        <div class="block-social-1">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    
+    <!-- Sponsors section ends-->
+    
+    <div class="site-section bg-light" id="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h2 class="text-black section-title text-uppercase">Contact Us</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 mb-5">
+            <form name = "myform" action="/met/" method="post" id ="contact">
+              {% csrf_token %}
+              
+              <div class="form-group row">
+                <div class="col-md-6 mb-4 mb-lg-0">
+                  <input type="text" class="form-control" placeholder="First name" id = "fname" name="yourname">
+                  
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Last name" id ="lname" name ="lname">
+                </div>
+                
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Email address" id ="email" name = myemail>
+                </div>
+                
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <textarea class="form-control" placeholder="Write your message." id= "message" name="mymessage" cols="30" rows="10"></textarea>
+                </div>
+                
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6 ml-auto">
+                  <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message">
+                </div>
+              </div>
+            </form>
           </div>
           
         </div>
       </div>
-    </footer>
+    </div>
+    
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-8">
+                <h2 class="footer-heading mb-4">Office Address: </h2>
+                <p>H.No: 6-3-348/6, Dwarakapuri Colony,Panjagutta,Hyderabad,Telangana-500087 </p>
+                <h2 class="footer-heading mb-4">Reg Address: </h2>
+                <p>Plot No 152, H.No:12/100,Tirumalanagar Colony,Jillelaguda,RR Dist,Telangana-500097 </p>
+              </div>
+              <div class="col-md-4 ml-auto">
+                <h2 class="footer-heading mb-4">Features</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ml-auto">
+          
+          <div class="mb-5">
+            <div class="mb-5">
+              <h2 class="footer-heading mb-4"></h2>
+              <p></p>
+            </div>
+            <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
+            <form action="/emailSubscribe/" method="post" name="myform1" novalidate>
+              {% csrf_token %}
+              <div class="input-group mb-3">
+                
+                <input type="text" class="form-control" id ="email" name ="email"placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Subscribe">
+                </div>
+              </div>
+            </form>
+          </div>
+          
+          
+          <h2 class="footer-heading mb-4">Follow Us</h2>
+          <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
+          <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+          <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+          <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+        </form>
+      </div>
+    </div>
+    <div class="row pt-5 mt-5 text-center">
+      <div class="col-md-12">
+        <div class="border-top pt-5">
+          <p>
+            Developed by StemHub Technologies Pvt.Ltd<br>
+            
+            
+            <h7>Contact Us: </h7>
+            <a href="#">info@stemhub.tech</a><br>
+            <h7>  Visit Us: </h7>
+            <a href="#">  www.stemhub.tech</a>
+            
+            <!--
+            <~~! Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. ~~>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <~~! Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. ~~>
+            -->
+          </p>
+        </div>
+      </div>
+      
+    </div>
   </div>
-  <script src="{% static 'meet/asset/js/jquery-3.3.1.min.js' %}"></script>
-  <script src="{% static 'meet/asset/js/jquery-ui.js' %}"></script>
-  <script src="{% static 'meet/asset/js/popper.min.js' %}"></script>
-  <script src="{% static 'meet/asset/js/bootstrap.min.js' %}"></script>
-  <script src="{% static 'meet/asset/js/owl.carousel.min.js' %}"></script>
-  <script src="{% static 'meet/asset/js/jquery.magnific-popup.min.js' %}"></script>
-  <script src="{% static 'meet/asset/js/jquery.sticky.js' %}"></script>
-  <script src="{% static 'meet/asset/js/jquery.waypoints.min.js' %}"></script>
-  <script src="{% static 'meet/asset/js/jquery.animateNumber.min.js' %}"></script>
-  <script src="{% static 'meet/asset/js/aos.js'%}"></script>
-  <script src="{% static  'meet/asset/js/main.js' %}"></script>
-  <script src="{% static 'meet/asset/jquery-2.2.3.min.js' %}"></script>
-  
+</footer>
+</div>
+<script src="{% static 'meet/asset/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'meet/asset/js/jquery-ui.js' %}"></script>
+<script src="{% static 'meet/asset/js/popper.min.js' %}"></script>
+<script src="{% static 'meet/asset/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'meet/asset/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'meet/asset/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'meet/asset/js/jquery.sticky.js' %}"></script>
+<script src="{% static 'meet/asset/js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'meet/asset/js/jquery.animateNumber.min.js' %}"></script>
+<script src="{% static 'meet/asset/js/aos.js'%}"></script>
+<script src="{% static  'meet/asset/js/main.js' %}"></script>
+<script src="{% static 'meet/asset/jquery-2.2.3.min.js' %}"></script>
 </body>
 <!-- for testimonial alignment-->
 <script>
@@ -887,7 +1032,18 @@ fixButtonHeights();
 });
 });
 })(jQuery);
+$(document).ready(function () {
+$('#datepicker').datepicker({
+uiLibrary: 'bootstrap'
+});
+});
 </script>
+<!-- Script for Image upload starts-->
+<script>
+var $imageupload = $('.imageupload');
+$imageupload.imageupload();
+</script>
+<!-- Script for Image upload end-->
 <!-- for testimonial alignment-->
 {% endblock %}
 </html>
